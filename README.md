@@ -2,8 +2,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-
-Demo for Machine Learning for Music Discovery workshop at ICML2017 https://icml2017demo.herokuapp.com
+ https://music-recommendation.herokuapp.com/
 
 ![](https://habrastorage.org/web/d69/4cd/053/d694cd0537084ab99c6dc35cf77f5f00.png)
 
@@ -18,8 +17,8 @@ python app.py
 
 ## API
 
-* Code: https://github.com/pavelk2/ephemeral-context-music-recommendation
-* Hosted on Heroku: https://icml2017demo.herokuapp.com
+
+* Hosted on Heroku: https://music-recommendation.herokuapp.com/
 * Request example:
 
 ```
@@ -33,7 +32,7 @@ Host: icml2017demo.herokuapp.com
 
 ```
 GET /recommend?context=1,0,0,0,0,0,0,1&amp;weights=40,30,30 HTTP/1.1
-Host: icml2017demo.herokuapp.com
+Host: https://music-recommendation.herokuapp.com/
 ```
 #### Response
 
@@ -205,10 +204,6 @@ CONTEXT_STATES = {
 CONTEXT_EXAMPLE = [1,3,1,2,3,6,2,1]
 ```
 
-## SoundCloud
-
-Recommendations are formed based on 1036 tracks from SoundCLoud: https://github.com/pavelk2/ICML2017Demo/blob/master/exploratory_survey/Music%20preferences-report.csv
-
 ### Music Classification
 
 #### GENRES
@@ -259,13 +254,4 @@ update tracks_SC set arousal = -4 where (tags like "%fatig%" or tags like "%calm
 ## Survey 
 Exploratory survey about causes affecting music preferences
 
-#### Conditions
-
-* One survey was shared on social media (https://pavelkucherbaev.typeform.com/to/WVLEi7)
-* Another survey was launched on human computation platform CrowdFlower (https://pavelkucherbaev.typeform.com/to/Okk9Ni)
-
-#### Results
-
-* We collected 25 responses from social media (https://github.com/pavelk2/ICML2017Demo/blob/master/exploratory_survey/Music%20preferences-report.csv)
-* We collected 103 responses from CrowdFlower (https://github.com/pavelk2/ICML2017Demo/blob/master/exploratory_survey/Music%20preferences%20CrowdFlower-report.csv)
 
